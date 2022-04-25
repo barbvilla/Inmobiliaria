@@ -1,0 +1,27 @@
+body,*{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+}
+
+.container-fluid {
+    padding: 0
+}
+
+a {
+    color:#000000
+}
+
+.fondo-carrusel {
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.carousel-indicators {
+    bottom:-40px;
+    opacity: 0.7;
+  }
+
+.test {
+    background-color:#000000 !important;
+}
+
+

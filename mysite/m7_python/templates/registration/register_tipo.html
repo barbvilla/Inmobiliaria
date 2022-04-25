@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="container-fluid">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="fs-1 navbar-brand" href="/">
+                <i class="fa-solid fa-house-chimney-window"></i> Inmobiliaria              
+            </a>           
+        </div>
+    </nav>
+    <div class="container col-6">
+        <div class="container justify-content-center d-flex m-5">
+            <h1> Crear nuevo usuario </h1>
+        </div>
+        <div class="container justify-content-center d-flex m-5">
+            <form method='POST'>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="container justify-content-center d-flex py-3">
+                    <button> Registrar </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<nav class="navbar navbar-light bg-light">
+    <div class="container">
+        <a class="fs-1 navbar-brand" href="/">
+            <i class="fa-solid fa-house-chimney-window"></i> Inmobiliaria              
+        </a>
+</nav>
+<div class="container-fluid col-6">
+    <div class="container justify-content-center d-flex m-5">
+        <h1> Crear nuevo usuario </h1>
+    </div>
+    <div class="container justify-content-center d-flex m-5">
+        <form method='POST'>
+            {% csrf_token %}
+            <fieldset class="form-group">
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success my-3"> Registrar </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
