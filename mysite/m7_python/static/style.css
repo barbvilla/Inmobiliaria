@@ -8,7 +8,7 @@ body,*{
 }
 
 a {
-    color:#000000
+    color:#000000 !important;
 }
 
 .fondo-carrusel {
@@ -24,3 +24,26 @@ a {
     background-color:#000000 !important;
 }
 
+.color-boton{
+    color: white !important;
+    background-color: rgba(182, 66, 66, 0.717);
+}
+
+.color-link{
+    color: white !important;
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: rgba(182, 66, 66, 0.717) !important;
+
+}
+.nav-link{
+    color: white !important;
+    font-size: large;
+}
+
+.color-footer{
+    background-color: rgba(182, 66, 66, 0.717) !important;
+    color:white !important;
+}

@@ -16,17 +16,27 @@
     <div class="container">
         <h1> Bienvenido(a), {{user.first_name}} {{user.last_name}} </h1>
         <h5> Usuario: {{user.username}} ({{user.email}})</h5>
-        <a href="{% url 'update_profile' %}"> Editar perfil de usuario </a>
-        <a href="{% url 'new_inmueble_url' %}"> Nuevo Inmueble </a>
+        <div class="container justify-content d-flex m-3">
+            <button class="color-boton btn-sm mx-2">
+                <a class="color-link" href="{% url 'update_profile' %}"> Editar perfil </a>
+            </button>
+            <button class="color-boton btn-sm mx-2">
+                <a class="color-link" href="{% url 'new_inmueble_url' %}"> Nuevo Inmueble</a>
+            </button>
+        </div>
         <h3>Lista de propiedades publicadas</h3>
         {% for product in inmuebles %}
-            <tr>
-                <td>
+            <div class="container">
+                <div class="container my-3">
                     <h5> {{ product.nombre_inmueble }} </h5>
-                    <a href="/update_inmueble?id_inmueble={{ product.id }}"> Editar </a>
-                    <a href="/eliminar_inmueble?id_inmueble={{ product.id }}"> Borrar </a>
-                </td>
-            </tr>
+                    <button class="color-boton btn-sm mx-2">
+                        <a class="color-link" href="/update_inmueble?id_inmueble={{ product.id }}"> Editar</a>
+                    </button>
+                    <button class="color-boton btn-sm mx-1">
+                        <a class="color-link" href="/eliminar_inmueble?id_inmueble={{ product.id }}"> Borrar</a>
+                    </button>
+                </div>
+            </div>
         {% endfor %}
     </div>
 </div>
