@@ -47,9 +47,9 @@ class InmuebleForm(forms.Form):
     numero_banos = forms.CharField(label='Número de baños', max_length=100)
     numero_hab = forms.CharField(label='Número de habitaciones', max_length=100)
     direccion = forms.CharField(label='Dirección', max_length=100)
-    precio_mensual = forms.FloatField(label='Precio')
+    precio_mensual = forms.IntegerField(label='Precio')
     
 class InmueblesUpdateForm(forms.ModelForm):
     class Meta:
         model = Inmuebles
-        fields = ['nombre_inmueble', 'descripcion', 'm2_construido', 'm2_terreno', 'numero_estacionamientos', 'numero_banos', 'numero_hab', 'direccion', 'precio_mensual', 'estado']
+        fields = ['nombre_inmueble', 'descripcion', 'm2_construido', 'm2_terreno', 'numero_estacionamientos', 'numero_banos', 'numero_hab', 'direccion', 'precio_mensual']
