@@ -3,12 +3,23 @@ body,*{
     font-weight: 600;
 }
 
-.container-fluid {
-    padding: 0
+a:link, a:visited {
+    text-align: center;
+    text-decoration: none;
 }
 
-a {
-    color:#000000 !important;
+a:hover, a:active {
+    color: #000000;
+}
+
+.navbar a:hover {
+    background-color: rgb(218, 147, 158, 0.587) ;
+    border-radius: 25px;
+    color: #000000 !important;
+}
+
+.container-fluid {
+    padding: 0
 }
 
 .fondo-carrusel {
@@ -26,7 +37,7 @@ a {
 
 .color-boton{
     color: white !important;
-    background-color: rgba(182, 66, 66, 0.717);
+    background-color: rgb(212, 121, 121);
 }
 
 .color-link{
@@ -35,7 +46,7 @@ a {
 }
 
 .navbar{
-    background-color: rgba(182, 66, 66, 0.717) !important;
+    background-color: rgba(212, 121, 121) !important;
 
 }
 .nav-link{
@@ -44,7 +55,7 @@ a {
 }
 
 .color-footer{
-    background-color: rgba(182, 66, 66, 0.717) !important;
+    background-color: rgba(212, 121, 121) !important;
     color:white !important;
 }
 
@@ -53,10 +64,29 @@ a {
     bottom: 0;
     width: 100%;
     height: 25px;
-    margin-bottom: 50px;
-   
+    margin-bottom: 50px;       
 }
 
 .actualizar{
     margin-bottom: 110px;    
+}
+
+.fa-facebook-square:hover {
+    border-style: inherit;
+    color: rgba(0 ,0, 255, 0.679) !important;
+}
+
+.fa-instagram-square:hover{
+    border-style: inherit;
+    color: rgba(156, 38, 210, 0.773) !important;
+}
+
+.fa-twitter-square:hover{
+    border-style: inherit;
+    color:rgba(0, 255, 255, 0.85) !important;
+}
+
+.fa-whatsapp-square:hover{
+    border-style: inherit;
+    color: rgb(47, 255, 47) !important;
 }
